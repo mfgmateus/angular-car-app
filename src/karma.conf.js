@@ -40,7 +40,7 @@ module.exports = function (config) {
 		  base: 'ChromiumHeadless',
 		  flags: ['--no-sandbox', '--headless', '--disable-gpu', '--disable-translate', '--disable-extensions']
 		}
-	}
+	},
     singleRun: false
   });
 };
