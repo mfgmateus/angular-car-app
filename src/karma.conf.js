@@ -35,12 +35,12 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['ChromiumNoSandbox'],
-	  customLaunchers: {
-		ChromiumNoSandbox: {
-		  base: 'ChromiumHeadless',
-		  flags: ['--headless', '--disable-gpu', '--disable-translate', '--disable-extensions']
-		}
-	},
+    customLaunchers: {
+      ChromiumNoSandbox: {
+        base: 'ChromiumHeadless',
+        flags: ['--headless', '--disable-gpu', '--disable-translate', '--disable-extensions']
+      }
+    },
     singleRun: false
   });
 };
