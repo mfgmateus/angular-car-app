@@ -34,13 +34,13 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromiumNoSandbox'],
-	  customLaunchers: {
-		ChromiumNoSandbox: {
-		  base: 'ChromiumHeadless',
-		  flags: ['--headless', '--disable-gpu', '--disable-translate', '--disable-extensions']
-		}
-	},
+    browsers: ['ChromeHeadlessNoSandbox'],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     singleRun: false
   });
 };
